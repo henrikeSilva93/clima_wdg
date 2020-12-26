@@ -7,6 +7,9 @@ const condicao = document.querySelector(".condicao")
 const min_temp = document.querySelector(".min-tem")
 const max_temp = document.querySelector(".max-tem")
 const icone = document.querySelector(".icon img")
+const btn = document.querySelector('btn')
+const input_text = document.querySelector('input')
+
 
 
 // função que vai renderizar os dados no html
@@ -21,7 +24,7 @@ let render = (data) => {
 }
 
 function buscarDados(lat, long) {
-    const url = `https://api.hgbrasil.com/weather?format=json-cors&key=91f0c9df&lat=${lat}&lon=${long}&user_ip=remote`;
+    const url = `https://api.hgbrasil.com/weather?format=json-cors&key=91f0c9df&lat=${lat}&lon=${long}`;
 
     fetch(url).then(Response => {
         return Response.json()
@@ -35,5 +38,16 @@ navigator.geolocation.getCurrentPosition((position)=> {
      long = position.coords.longitude
      buscarDados(lat, long)
  })
-
- console.log(icone.img)
+ // Busando uma cidade pelo input de texto
+btn.addEventListener('click', () => {
+    let url = `https://api.hgbrasil.com/weather?format=json-cors&key=91f0c9df&city_name=${input_text.value}`
+    console.log(url)
+    fetch(url)
+    .then(Response => {
+        return Response.json()
+    })
+    .then(api_data => {
+        render(api_data.results)
+        
+    })
+})
