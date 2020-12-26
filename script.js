@@ -47,7 +47,6 @@ btn.addEventListener('click', () => {
         return Response.json()
     })
     .then(api_data => {
-        render(api_data.results)
-        
+        render(api_data.results) 
     })
 })
