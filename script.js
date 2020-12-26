@@ -11,7 +11,6 @@ const icone = document.querySelector(".icon img")
 
 // função que vai renderizar os dados no html
 let render = (data) => {
-    console.log(data)
     main_temp.innerHTML = data.temp + "° C"
     cidade.innerHTML = data.city
     condicao.innerHTML = data.description
