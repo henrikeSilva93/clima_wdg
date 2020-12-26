@@ -1,8 +1,30 @@
 .coluna1 {
-    background-color: red;
-    height: 100vh;
+    
+    height: 70vh;
+    
 }
 
 .coluna2 {
-    background-color: blue;
+
+}
+.celsius {
+    font-size: 8em;
+}
+
+.cidade {
+    font-size: 2em;
+}
+.condicao {
+    font-size: 1em;
+}
+.icon img {
+    width: 600px;
+    margin-left: 50px;
+}
+.min-max {
+    margin-top: 30px;
+    font-size: 25px;
+}
+.icon-temp {
+    align-content: ;
 }
