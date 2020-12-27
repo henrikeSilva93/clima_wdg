@@ -1,3 +1,4 @@
+
 .coluna1 {
     
     height: 70vh;
@@ -21,7 +22,20 @@
     width: 600px;
     margin-left: 50px;
 }
-.min-max {
+.min-max-1 {
     margin-top: 30px;
     font-size: 25px;
+}
+
+.min-max {
+    font-size: 1em;
+    text-align: center;
+}
+.dia-semana {
+    font-size: 1em;
+    text-align: center;
+}
+.mes-data {
+    text-align: center;
+    font-size: 1em;
 }
