@@ -1,0 +1,32 @@
+
+.coluna1 {
+    
+    height: 70vh;
+    
+}
+
+.coluna2 {
+
+}
+.celsius {
+    font-size: 8em;
+}
+
+.cidade {
+    font-size: 2em;
+}
+.condicao {
+    font-size: 1em;
+}
+.icon img {
+    width: 600px;
+    margin-left: 50px;
+}
+.min-max {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.diarias {
+
+}
