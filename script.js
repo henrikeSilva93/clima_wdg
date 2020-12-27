@@ -11,7 +11,6 @@ const icone = document.querySelector(".icon img")
 const btn = document.querySelector('btn')
 const input_text = document.querySelector('input')
 const diaria = document.querySelector('.media-dias')
-console.log(diaria)
 const api_key = "40d47c24"
 
 
