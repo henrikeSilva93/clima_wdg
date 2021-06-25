@@ -21,7 +21,7 @@ let render = (data) => {
     condicao.innerHTML = data.description
     min_temp.innerHTML = data.forecast[0].min + "° C"
     max_temp.innerHTML = data.forecast[0].max + "° C"
-    hora_local.innerHTML = `Horario local: ${data.time}`
+    hora_local.innerHTML = `Horário local: ${data.time}`
     icone.src = `http://assets.api.hgbrasil.com/weather/images/${data.img_id}.png`
     
 }
